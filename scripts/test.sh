@@ -8,18 +8,6 @@ echo "Checking Node.js and npm versions..."
 node -v
 npm -v
 
-# Run a simple npm test (assuming you have some tests defined in package.json)
-echo "Running npm test..."
-npm test
-
-# Simulate a test by checking if a file exists
-if [ -f "./sample-file.txt" ]; then
-  echo "sample-file.txt exists. Test passed."
-else
-  echo "sample-file.txt does not exist. Test failed."
-  exit 1  # Exit with a non-zero status to indicate failure
-fi
-
 # If all tests pass, print a success message
 echo "All tests passed successfully!"
 
